@@ -1,0 +1,11 @@
+application: cpd200-20160623-fquinagoran2
+module: admin
+version: alpha-002
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+  login: admin
+  secure: always
